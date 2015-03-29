@@ -1,5 +1,3 @@
-require "algorithmy/version"
+require 'algorithmy/version'
+require 'algorithmy/graph/graph'
 
-module Algorithmy
-  # Your code goes here...
-end
