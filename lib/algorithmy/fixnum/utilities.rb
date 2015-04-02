@@ -1,0 +1,13 @@
+class Fixnum
+  def bitcount
+    n = self
+    count = 0
+
+    while n > 0
+      count += n & 1
+      n >>= 1
+    end
+
+    count
+  end
+end
