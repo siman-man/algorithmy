@@ -10,4 +10,18 @@ class Fixnum
 
     count
   end
+
+  def power(x)
+    result = 1 
+    n = self
+
+    while x > 0 
+      result *= n if (x & 1).nonzero?
+
+      n *= n
+      x >>= 1
+    end 
+
+    result
+  end
 end
